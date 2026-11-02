@@ -11,7 +11,7 @@ CH=[
 ("ch-07-laplace-poisson","משוואות לפלס ופואסון"),
 ]
 def full_title(i,t): return f"פרק {i+1} - {t}"
-BRAND="מד״ח בטכניון"
+BRAND="מד״ח מ׳"
 HEAD='''<!doctype html>
 <html lang="he" dir="rtl">
 <head>

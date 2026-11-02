@@ -124,5 +124,18 @@
     if (selected) select(selected, true);
   }));
   if (examples.length) select(examples.find(button => button.getAttribute('aria-pressed') === 'true') || examples[0], false);
+  // The video: YouTube's player loads only when it is played (no YouTube requests or cookies before that).
+  document.querySelectorAll('.video[data-yt]').forEach(box => box.querySelector('a')?.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const frame = document.createElement('iframe');
+    frame.src = `https://www.youtube-nocookie.com/embed/${box.dataset.yt}?autoplay=1&rel=0`;
+    frame.title = box.querySelector('.sr-only')?.textContent || 'YouTube';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    box.replaceChildren(frame);
+    frame.focus();
+  }));
+
   document.documentElement.classList.add('motion-ready');
 })();

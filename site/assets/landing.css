@@ -227,3 +227,83 @@ html:not(.motion-ready) .book-cover { display: none; }
 @media (max-width: 700px) {
   .hero-copy::before, .course .section-intro::before, .trick-grid > [data-reveal]::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
 }
+
+/* ---- The course app at /tutor/: hero note, numbers, how a round works, what's inside, exam topics, video, start. ---- */
+.hero-free { margin: 1.1rem 0 0; color: var(--muted); font-size: .98rem; }
+.app-facts { padding-block: 0 clamp(1rem, 3vh, 2rem); }
+.app-facts .facts { background: color-mix(in srgb, var(--card) 88%, transparent); border: 1px solid var(--line); border-radius: 20px; padding-block: 1.6rem; box-shadow: var(--shadow); }
+.app-facts .fact { text-align: center; }
+.app-facts .fact strong { font-size: clamp(2rem, 3.4vw, 2.7rem); line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.app-facts .fact span { display: block; color: var(--ink); font-weight: 600; font-size: 1.05rem; }
+.app-facts .fact small { display: block; color: var(--muted); font-size: .86rem; }
+
+.how-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.steps { list-style: none; padding: 0; margin: 1.6rem 0 0; counter-reset: step; }
+.steps li { counter-increment: step; position: relative; padding-inline-start: 3.1rem; margin-bottom: 1.4rem; color: var(--muted); font-size: 1.08rem; }
+.steps li b { display: block; color: var(--ink); font-size: 1.15rem; margin-bottom: .15rem; }
+.steps li::before { content: counter(step); position: absolute; inset-inline-start: 0; top: .1rem; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font: 600 1rem var(--serif); }
+
+.demo { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: clamp(1.2rem, 2.6vw, 1.8rem); box-shadow: var(--shadow); }
+.demo-tag { display: inline-block; font-size: .8rem; font-weight: 700; color: var(--muted); background: var(--paper-deep); border-radius: 999px; padding: .1rem .7rem; margin-bottom: .6rem; }
+.demo-q p { margin-bottom: .5rem; font-size: 1.05rem; line-height: 1.75; }
+.demo-ask { color: var(--accent); font-weight: 700; }
+.demo-sheet { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin-block: 1rem; padding: .7rem; border-radius: 14px; background: var(--paper); border: 1px solid var(--line); }
+.demo-cell { position: relative; min-width: 0; padding: .55rem .7rem .4rem; border-radius: 10px; border: 1px solid transparent; }
+.demo-cell > span { display: block; font-size: .78rem; font-weight: 700; color: var(--muted); }
+.demo-cell .katex { font-size: .8em; }
+.demo-cell .katex-display { margin: .2rem 0 0; text-align: left; }
+.lasso { position: absolute; inset: -10px -8px; width: calc(100% + 16px); height: calc(100% + 20px); overflow: visible; fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-linecap: round; pointer-events: none; }
+.lasso path { stroke-dasharray: 1; stroke-dashoffset: 0; vector-effect: non-scaling-stroke; }
+.motion-ready .demo .lasso path { stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s var(--ease-out) .55s; }
+.motion-ready .demo.in .lasso path { stroke-dashoffset: 0; }
+.demo-feedback { padding: .75rem 1rem; border-radius: 12px; border-inline-start: 3px solid var(--success); background: color-mix(in srgb, var(--success) 9%, var(--card)); font-size: .98rem; line-height: 1.7; }
+.demo-feedback b { color: var(--success); }
+.motion-ready .demo .demo-feedback { opacity: 0; transform: translateY(6px); transition: opacity .5s var(--ease-out) 1.8s, transform .5s var(--ease-out) 1.8s; }
+.motion-ready .demo.in .demo-feedback { opacity: 1; transform: none; }
+
+.tool-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.tool-card { padding: 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.tool-card h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: .5rem; }
+.tool-card p { margin: 0; color: var(--muted); font-size: 1rem; }
+
+.topics-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.topic-bars { list-style: none; margin: 0; padding: 1.3rem 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.topic-bars li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem 1rem; padding-block: .55rem; }
+.topic-bars li + li { border-top: 1px dashed var(--line); }
+.topic-name { grid-row: 1; grid-column: 1; font-weight: 600; font-size: 1rem; line-height: 1.4; }
+.topic-count { grid-row: 1; grid-column: 2; color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.topic-bar { grid-row: 2; grid-column: 1 / -1; height: 6px; border-radius: 6px; background: var(--paper-deep); overflow: hidden; }
+.topic-bar i { display: block; height: 100%; width: calc(var(--w) * 100%); border-radius: inherit; background: var(--accent); transform-origin: right; }
+.motion-ready .topic-bars .topic-bar i { transform: scaleX(0); transition: transform .9s var(--ease-out); transition-delay: calc(var(--i) * 70ms + 200ms); }
+.motion-ready .topic-bars.in .topic-bar i { transform: none; }
+
+.video-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.video { position: relative; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: var(--ink); box-shadow: var(--shadow); }
+.video-link, .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease-out), filter .3s; }
+.video-link:hover img { transform: scale(1.02); filter: brightness(.92); }
+.video-play { position: absolute; top: 50%; left: 50%; width: 4.6rem; height: 4.6rem; margin: -2.3rem 0 0 -2.3rem; display: grid; place-items: center; border-radius: 50%; background: var(--accent); box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .5); transition: transform .25s var(--ease-out); }
+.video-play svg { width: 1.9rem; height: 1.9rem; fill: #fff; margin-inline-start: .2rem; }
+.video-link:hover .video-play { transform: scale(1.07); }
+
+.start { padding-top: 0 !important; }
+.start-cta { margin-top: 0; }
+
+/* The art sits beside these text blocks too (see Option A above). */
+.how-grid > [data-reveal]:first-child, .tools .section-intro, .exam-topics .section-intro, .video-section .section-intro { position: relative; }
+.how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before { content: ''; position: absolute; z-index: -1; inset: -3.5rem -4rem; pointer-events: none;
+  background: radial-gradient(closest-side, var(--paper) 55%, color-mix(in srgb, var(--paper) 0%, transparent)); }
+
+@media (max-width: 1000px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .how-grid, .topics-grid, .video-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .tool-grid, .demo-sheet { grid-template-columns: 1fr; }
+  .app-facts .facts { padding-inline: .5rem; }
+  .topic-bars { padding: 1rem 1.1rem; }
+  .video-play { width: 3.8rem; height: 3.8rem; margin: -1.9rem 0 0 -1.9rem; }
+  .how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .demo .lasso path { stroke-dashoffset: 0; transition: none; }
+  .motion-ready .demo .demo-feedback, .motion-ready .topic-bars .topic-bar i { opacity: 1; transform: none; transition: none; }
+}

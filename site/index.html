@@ -8,17 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="/assets/style.css?v=11cd07388a">
-  <link rel="stylesheet" href="/assets/landing.css?v=d527dc727a">
+  <link rel="stylesheet" href="/assets/style.css?v=d4a23cd7c7">
+  <link rel="stylesheet" href="/assets/landing.css?v=562702d001">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
-  <script src="/assets/config.js?v=33b38f7d8a" defer></script>
+  <script src="/assets/config.js?v=f9ca6e84bd" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
   <script src="/assets/app.js?v=3d94f7c3c8" defer></script>
-  <script src="/assets/landing.js?v=cc7da7850b" defer></script>
+  <script src="/assets/landing.js?v=d77402013b" defer></script>
   <script src="/assets/ascii.js?v=c6fa8ec135" defer></script>
-  <title>מד״ח מ׳ · הכנה למבחן במשוואות דיפרנציאליות חלקיות (104228)</title>
-  <meta name="description" content="אתר הכנה למבחן במד״ח מ׳ (104228) בטכניון: משוואות דיפרנציאליות חלקיות. האתר בבנייה.">
+  <title>מד״ח מ׳ · תרגול למבחן עם מורה AI (104228)</title>
+  <meta name="description" content="הכנה למבחן במד״ח מ׳ (104228) בטכניון: 16 מבחני עבר מנותחים, דף נוסחאות ומורה AI שמתרגל אתכם על שאלות אמיתיות. ניסיון חינם.">
 </head>
 <body class="home">
 <a class="skip-link" href="#main">דילוג לתוכן</a>
@@ -26,7 +26,7 @@
   <nav class="container nav" aria-label="ניווט ראשי">
     <a class="brand" href="/">מד״ח מ׳</a>
     <div class="nav-links">
-      <a href="/#chapters">הפרקים</a><a href="/tricks.html">שיטות</a><a href="/tutor/">תרגול עם מורה AI</a>
+      <a class="nav-tutor" href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">הפרקים</a><a href="/tricks.html">שיטות</a>
     </div>
     <div class="nav-tools">
       <button type="button" class="icon-button" data-theme-toggle>מצב כהה</button>
@@ -44,22 +44,124 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="eyebrow rise" style="--d:0">מד״ח מ׳ · 104228 · טכניון</p>
-        <h1 id="hero-title"><span class="rise" style="--d:1">גלים, חום ולפלס,</span> <em class="rise" style="--d:2">פרק אחרי פרק.</em></h1>
-        <p class="lead rise" style="--d:3">אתר הכנה למבחן בקורס מד״ח מ׳ (104228) בטכניון. החומר מסודר לפי נושאי הסילבוס, ממושגי יסוד ושיטת האופיינים ועד משוואות לפלס ופואסון. האתר בבנייה, והפרקים יתווספו בהדרגה.</p>
+        <h1 id="hero-title"><span class="rise" style="--d:1">מתרגלים מד״ח</span> <em class="rise" style="--d:2">על מבחנים אמיתיים.</em></h1>
+        <p class="lead rise" style="--d:3">מורה AI שמכיר את 16 מבחני העבר של הקורס. הוא יודע אילו שאלות חוזרות בכל מועד, נותן לכם דף נוסחאות מוכן, ומתרגל אתכם עליו עד שתמצאו כל נוסחה בשניות.</p>
         <div class="actions rise" style="--d:4">
-          <a class="button button-lg" href="/#chapters">לתוכן העניינים <span class="arrow" aria-hidden="true">←</span></a>
+          <a class="button button-lg" href="/tutor/">התחילו לתרגל בחינם <span class="arrow" aria-hidden="true">←</span></a>
+          <a class="button secondary button-lg" href="#how">איך זה עובד</a>
         </div>
+        <p class="hero-free rise" style="--d:5">התחברות עם Google · ניסיון חינם במורה ה-AI</p>
       </div>
       <aside class="countdown-card rise" style="--d:3" id="exam"><div data-countdown="home" aria-label="ספירה לבחינה הבאה"></div></aside>
+    </div>
+  </section>
+
+  <section class="app-facts" aria-label="מה יש בפנים">
+    <div class="container facts" data-reveal>
+      <div class="fact"><strong>16</strong><span>מבחני עבר</span><small>תשפ״ב עד תשפ״ה</small></div>
+      <div class="fact"><strong>89</strong><span>שאלות מנותחות</span><small>ממוינות לפי נושא</small></div>
+      <div class="fact"><strong>9</strong><span>נושאים</span><small>לפי תדירות במבחן</small></div>
+      <div class="fact"><strong>231</strong><span>נוסחאות</span><small>בשני דפי נוסחאות</small></div>
+    </div>
+  </section>
+
+  <section class="section how" id="how" aria-labelledby="how-title">
+    <div class="container how-grid">
+      <div data-reveal>
+        <p class="eyebrow">איך זה עובד</p>
+        <h2 id="how-title">שאלה ממבחן, נוסחה בדף, הסבר במקום.</h2>
+        <ol class="steps">
+          <li><b>המורה שואל שאלה ממבחן אמיתי.</b> מתוך 16 מבחני העבר, לפי הנושאים שהכי חשוב לכם לחזק.</li>
+          <li><b>אתם מקיפים את הנוסחה בדף.</b> מחזיקים את העכבר ומקיפים את הנוסחה שפותרת את השאלה. כך לומדים למצוא כל נוסחה מהר, כמו במבחן.</li>
+          <li><b>מקבלים הסבר בדיוק במקום שטעיתם.</b> המורה מתקן את הדרך שלכם, לא מחליף אותה, וחוזר לנושא אחרי כמה סבבים.</li>
+        </ol>
+      </div>
+      <figure class="demo" data-reveal aria-label="דוגמה לסבב תרגול">
+        <div class="demo-q">
+          <span class="demo-tag">שאלה ממבחן · תשפ״ב, מועד ג׳, חורף</span>
+          <p>מצאו פתרון לבעיה $u_{tt}-4u_{xx}=0$ עבור $x,t>0$, עם התנאים $u(x,0)=x^2$, $u_t(x,0)=x^2$ ו־$u(0,t)=0$.</p>
+          <p class="demo-ask">הקיפו בדף את הנוסחה שפותרת אותה.</p>
+        </div>
+        <div class="demo-sheet">
+          <div class="demo-cell is-answer"><span>נוסחת ד׳אלמבר</span><div dir="ltr">$\displaystyle u=\tfrac{f(x+ct)+f(x-ct)}{2}+\tfrac{1}{2c}\int_{x-ct}^{x+ct}\! g$</div>
+            <svg class="lasso" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M152 8 C 230 4, 296 22, 294 52 C 292 84, 214 97, 140 95 C 62 93, 6 80, 7 50 C 8 20, 70 6, 160 9 C 190 10, 214 14, 232 20"/></svg></div>
+          <div class="demo-cell"><span>משוואות האופיינים</span><div dir="ltr">$\displaystyle \tfrac{dx}{dt}=a,\ \tfrac{dy}{dt}=b,\ \tfrac{du}{dt}=c$</div></div>
+          <div class="demo-cell"><span>לפלס בעיגול</span><div dir="ltr">$\displaystyle v=\sum_{n} r^n(A_n\cos n\theta+B_n\sin n\theta)$</div></div>
+          <div class="demo-cell"><span>מד״ר לזמן, משוואת החום</span><div dir="ltr">$\displaystyle T_n'+k\lambda_n T_n=F_n$</div></div>
+        </div>
+        <figcaption class="demo-feedback"><b>נכון, 3.4 שניות.</b> חצי ישר עם $u(0,t)=0$: מרחיבים את $f$ ו־$g$ הרחבה אי־זוגית, ואז ד׳אלמבר עם $c=2$.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section tools" aria-labelledby="tools-title">
+    <div class="container">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">מה יש בפנים</p>
+        <h2 id="tools-title">כל מה שצריך לקראת המבחן, במקום אחד.</h2>
+      </div>
+      <div class="tool-grid">
+        <article class="tool-card" data-reveal><h3>ניתוח המבחנים</h3><p>מה מופיע הכי הרבה, תבניות השאלות שחוזרות בכל מועד, והנוסחאות שחובה לדעת.</p></article>
+        <article class="tool-card" data-reveal><h3>דף נוסחאות מוכן</h3><p>מסודר לפי סוגי השאלות במבחן ומוכן להדפסה. אפשר לבקש מהמורה להוסיף, להסיר או לסדר בו כל דבר.</p></article>
+        <article class="tool-card" data-reveal><h3>תרגול מהיר</h3><p>מציאת נוסחאות בדף נגד השעון, או הקפת הנוסחאות ששאלה אמיתית צריכה. פתוח לכולם, בלי הגבלה.</p></article>
+        <article class="tool-card" data-reveal><h3>מבחן עבר עם טיימר</h3><p>פותרים מבחן מלא בזמן אמת, מצלמים את הפתרון, והמורה בודק ומראה איפה הדרך השתבשה.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section exam-topics" aria-labelledby="topics-title">
+    <div class="container topics-grid">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">מה חוזר במבחנים</p>
+        <h2 id="topics-title">89 שאלות, 9 נושאים.</h2>
+        <p class="muted">כל השאלות מ־16 מבחני העבר, לפי נושא. המורה מתרגל אתכם יותר על מה שמופיע יותר, ועל מה שעוד קשה לכם.</p>
+      </div>
+      <ol class="topic-bars" data-reveal>
+        <li style="--w:1.000; --i:0"><span class="topic-name">משוואות מסדר ראשון ושיטת האופיינים</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">18 שאלות</span></li>
+        <li style="--w:0.833; --i:1"><span class="topic-name">לפלס בקואורדינטות קוטביות ובעיית נוימן</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">15 שאלות</span></li>
+        <li style="--w:0.722; --i:2"><span class="topic-name">סיווג וצורה קנונית, סדר שני</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">13 שאלות</span></li>
+        <li style="--w:0.722; --i:3"><span class="topic-name">משוואת הגלים בקו האינסופי ובחצי הישר</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">13 שאלות</span></li>
+        <li style="--w:0.556; --i:4"><span class="topic-name">משוואת הגלים בתחום חסום</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">10 שאלות</span></li>
+        <li style="--w:0.444; --i:5"><span class="topic-name">לפלס במלבן, עקרון המקסימום ויחידות</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">8 שאלות</span></li>
+        <li style="--w:0.333; --i:6"><span class="topic-name">משוואת החום בתחום חסום</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">6 שאלות</span></li>
+        <li style="--w:0.278; --i:7"><span class="topic-name">משוואות הפתירות כמד״ר</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">5 שאלות</span></li>
+        <li style="--w:0.056; --i:8"><span class="topic-name">שטורם-ליוביל וטורי פורייה</span><span class="topic-bar" aria-hidden="true"><i></i></span><span class="topic-count">שאלה אחת</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section video-section" aria-labelledby="video-title">
+    <div class="container video-grid">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">סרטון</p>
+        <h2 id="video-title">כל סוגי השאלות ב־32 דקות.</h2>
+        <p class="muted">בעיית קושי, הפרדת משתנים, לפלס וגלים: מעבר על כל סוג שאלה שמופיע במבחן, ואיך פותרים אותו.</p>
+      </div>
+      <div class="video" data-reveal data-yt="OwL3q933n2Y">
+        <a class="video-link" href="https://www.youtube.com/watch?v=OwL3q933n2Y" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/OwL3q933n2Y/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+          <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+          <span class="sr-only">צפייה בסרטון: כל סוגי השאלות ב־32 דקות</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section start" aria-labelledby="start-title">
+    <div class="container">
+      <a class="calc-cta start-cta" href="/tutor/" data-reveal>
+        <span><strong id="start-title">התחילו לתרגל בחינם</strong><span>התחברות עם Google. ניתוח המבחנים, דף הנוסחאות והתרגול המהיר פתוחים לכולם, ויש ניסיון חינם במורה ה-AI.</span></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      </a>
     </div>
   </section>
 
   <section class="section course" id="course" aria-labelledby="course-title">
     <div class="container">
       <div class="section-intro" data-reveal>
-        <p class="eyebrow">הקורס</p>
+        <p class="eyebrow">פרקי לימוד</p>
         <h2 id="course-title">כל נושאי הסילבוס, בספר אחד.</h2>
-        <p class="muted">7 פרקים, אחד לכל נושא בסילבוס של קורס 104228, משיטת האופיינים ועד משוואת לפלס. כל הפרקים בהכנה.</p>
+        <p class="muted">7 פרקים, אחד לכל נושא בסילבוס של קורס 104228, משיטת האופיינים ועד משוואת לפלס. הפרקים בהכנה; בינתיים כל החומר לתרגול נמצא <a href="/tutor/">אצל המורה ה-AI</a>.</p>
       </div>
       <div class="book-pin" data-book-pin><div class="book-pin-sticky">
       <div class="book-stage" id="chapters" tabindex="-1" aria-label="תוכן ענייני הקורס">
@@ -110,7 +212,7 @@
     </div>
   </section>
 </main>
-<footer class="site-footer"><div class="container footer-row"><a class="footer-brand" href="/">מד״ח מ׳</a><a href="/#chapters">לכל הפרקים</a><a href="https://students.technion.ac.il/local/technionsearch/course/104228">דף הקורס 104228 באתר הטכניון</a></div><p class="container small">האתר הוא מיזם עצמאי ואינו אתר רשמי של הטכניון. ההתקדמות נשמרת בדפדפן במכשיר זה.</p></footer>
+<footer class="site-footer"><div class="container footer-row"><a class="footer-brand" href="/">מד״ח מ׳</a><a href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">לכל הפרקים</a><a href="https://students.technion.ac.il/local/technionsearch/course/104228">דף הקורס 104228 באתר הטכניון</a></div><p class="container small">האתר הוא מיזם עצמאי ואינו אתר רשמי של הטכניון. ההתקדמות נשמרת בדפדפן במכשיר זה.</p></footer>
 <noscript><p class="container callout">יש להפעיל JavaScript להצגת נוסחאות וספירה לבחינה.</p></noscript>
 </body>
 </html>

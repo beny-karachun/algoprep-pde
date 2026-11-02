@@ -255,3 +255,5 @@ dialog[open] { animation: dialog-in .3s var(--ease-out); }
 @media (prefers-reduced-motion: reduce) { .countdown-digits strong.tick, .countdown-digits > div::after { animation: none; } }
 @media (max-width: 480px) { .countdown-digits > div { padding-inline: .3rem; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* The AI tutor link stands out in the nav on every page. */
+.nav-links a.nav-tutor { color: var(--accent); font-weight: 700; }

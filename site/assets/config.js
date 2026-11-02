@@ -1,10 +1,21 @@
 // Edit exam dates and the chapter list here only.
-// The exam date is not published yet, so exams is empty and the countdown says no date is set.
+// Exam dates: Moed A 2027-02-24, Moed B 2027-03-26 (CheeseFork, Winter 2026-27). No start time is published.
 // To add one: {"date": "YYYY-MM-DD", "time": null, "validity": "..."}. time null means local midnight; show days/hours only.
 window.TP_CONFIG = {
   "timeZone": "Asia/Jerusalem",
   "publicChapters": [],
-  "exams": [],
+  "exams": [
+    {
+      "date": "2027-02-24",
+      "time": null,
+      "validity": "יש לאמת את מועד הבחינה מול לוח הבחינות הרשמי של הטכניון."
+    },
+    {
+      "date": "2027-03-26",
+      "time": null,
+      "validity": "יש לאמת את מועד הבחינה מול לוח הבחינות הרשמי של הטכניון."
+    }
+  ],
   "chapters": [
     {
       "slug": "ch-01-basic-concepts",

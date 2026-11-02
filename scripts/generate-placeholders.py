@@ -62,9 +62,9 @@ def w(p,s):
 
 # config.js
 cfg={"timeZone":"Asia/Jerusalem","publicChapters":[],
- "exams":[],
+ "exams":[{"date":"2027-02-24","time":None,"validity":"יש לאמת את מועד הבחינה מול לוח הבחינות הרשמי של הטכניון."},{"date":"2027-03-26","time":None,"validity":"יש לאמת את מועד הבחינה מול לוח הבחינות הרשמי של הטכניון."}],
  "chapters":[{"slug":s,"title_he":full_title(i,t),"order":i+1} for i,(s,t) in enumerate(CH)]}
-w(ROOT+'/assets/config.js',"// Edit exam dates and the chapter list here only.\n// The exam date is not published yet, so exams is empty and the countdown says no date is set.\n// To add one: {\"date\": \"YYYY-MM-DD\", \"time\": null, \"validity\": \"...\"}. time null means local midnight; show days/hours only.\nwindow.TP_CONFIG = "+json.dumps(cfg,ensure_ascii=False,indent=2)+";\n")
+w(ROOT+'/assets/config.js',"// Edit exam dates and the chapter list here only.\n// Exam dates: Moed A 2027-02-24, Moed B 2027-03-26 (CheeseFork, Winter 2026-27). No start time is published.\n// To add one: {\"date\": \"YYYY-MM-DD\", \"time\": null, \"validity\": \"...\"}. time null means local midnight; show days/hours only.\nwindow.TP_CONFIG = "+json.dumps(cfg,ensure_ascii=False,indent=2)+";\n")
 
 toc="\n".join(f'              <li><a href="/chapters/{s}/"><span class="toc-n">{i+1:02d}</span><span class="toc-t">{t}</span><span class="toc-dots" aria-hidden="true"></span><span class="toc-tag upcoming">בקרוב</span></a></li>' for i,(s,t) in enumerate(CH))
 index=head("מד״ח מ׳ · הכנה למבחן במשוואות דיפרנציאליות חלקיות (104228)",' class="home"',True,

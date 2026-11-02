@@ -36,7 +36,7 @@ HEAD='''<!doctype html>
   <nav class="container nav" aria-label="ניווט ראשי">
     <a class="brand" href="/">'''+BRAND+'''</a>
     <div class="nav-links">
-      <a class="nav-tutor" href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">הפרקים</a><a href="/tricks.html">שיטות</a>
+      <a class="nav-tutor" href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">הפרקים</a><a href="/formula-sheet.pdf">דף נוסחאות</a>
     </div>
     <div class="nav-tools">
       <button type="button" class="icon-button" data-theme-toggle>מצב כהה</button>
@@ -44,7 +44,7 @@ HEAD='''<!doctype html>
   </nav>
 {progress}</header>
 '''
-FOOT='''<footer class="site-footer"><div class="container footer-row"><a class="footer-brand" href="/">'''+BRAND+'''</a><a href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">לכל הפרקים</a><a href="https://students.technion.ac.il/local/technionsearch/course/104228">דף הקורס 104228 באתר הטכניון</a></div><p class="container small">האתר הוא מיזם עצמאי ואינו אתר רשמי של הטכניון. ההתקדמות נשמרת בדפדפן במכשיר זה.</p></footer>
+FOOT='''<footer class="site-footer"><div class="container footer-row"><a class="footer-brand" href="/">'''+BRAND+'''</a><a href="/tutor/">תרגול עם מורה AI</a><a href="/#chapters">לכל הפרקים</a><a href="/formula-sheet.pdf">דף נוסחאות (PDF)</a><a href="https://students.technion.ac.il/local/technionsearch/course/104228">דף הקורס 104228 באתר הטכניון</a></div><p class="container small">האתר הוא מיזם עצמאי ואינו אתר רשמי של הטכניון. ההתקדמות נשמרת בדפדפן במכשיר זה.</p></footer>
 <noscript><p class="container callout">{ns}</p></noscript>
 </body>
 </html>

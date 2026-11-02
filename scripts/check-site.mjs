@@ -8,7 +8,8 @@ const pages = new Map();
 function walk(folder) {
   for (const entry of fs.readdirSync(folder, { withFileTypes: true })) {
     const file = path.join(folder, entry.name);
-    if (entry.isDirectory()) walk(file);
+    // tutor/ is the course app, built elsewhere (Exam Mastery Studio → Export as tutor/), not a page of this site.
+    if (entry.isDirectory()) { if (file !== path.join(root, 'tutor')) walk(file); }
     else if (entry.name.endsWith('.html')) pages.set(file, fs.readFileSync(file, 'utf8'));
   }
 }

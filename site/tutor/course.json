@@ -1,0 +1,281 @@
+{
+ "slug": "pde",
+ "name": "PDE",
+ "pack": "",
+ "exportedAt": 1793650747847,
+ "stats": {
+  "exams": 16,
+  "solutions": 0,
+  "questions": 89,
+  "solved": 0,
+  "topics": 9,
+  "formulas": 231,
+  "sheets": 2
+ },
+ "topics": [
+  {
+   "topic": "משוואות מסדר ראשון ושיטת האופייניים",
+   "count": 18,
+   "share": 0.20224719101123595
+  },
+  {
+   "topic": "משוואת לפלס בקואורדינטות קוטביות ובעיית נוימן",
+   "count": 15,
+   "share": 0.16853932584269662
+  },
+  {
+   "topic": "סיווג וצורה קנונית של מד\"ח מסדר שני",
+   "count": 13,
+   "share": 0.14606741573033707
+  },
+  {
+   "topic": "משוואת הגלים בקו האינסופי ובחצי הישר",
+   "count": 13,
+   "share": 0.14606741573033707
+  },
+  {
+   "topic": "משוואת הגלים בתחום חסום",
+   "count": 10,
+   "share": 0.11235955056179775
+  },
+  {
+   "topic": "משוואת לפלס במלבן, עקרון המקסימום ויחידות",
+   "count": 8,
+   "share": 0.0898876404494382
+  },
+  {
+   "topic": "משוואת החום בתחום חסום",
+   "count": 6,
+   "share": 0.06741573033707865
+  },
+  {
+   "topic": "משוואות הניתנות לפתרון ישיר כמד\"ר",
+   "count": 5,
+   "share": 0.056179775280898875
+  },
+  {
+   "topic": "בעיות שטורם-ליוביל וטורי פורייה",
+   "count": 1,
+   "share": 0.011235955056179775
+  }
+ ],
+ "templates": [
+  {
+   "name": "בעיית קושי למשוואה מסדר ראשון ותנאי החיתוך",
+   "description": "פתרון משוואה квази-לינארית או לינארית מסדר ראשון עם תנאי התחלה על עקום, בדיקת יחידות מקומית באמצעות יעקוביאן, או מציאת תנאי לקיום אינסוף פתרונות כאשר עקום ההתחלה הוא אופיין."
+  },
+  {
+   "name": "מד\"ח הפתירה כמד\"ר על ידי אינטגרציה או הצבה",
+   "description": "משוואה חלקית שבה מופיעות נגזרות רק לפי משתנה אחד (והשני משמש כפרמטר) או שניתן להציב בה נגזרת חלקית כפונקציה חדשה ולפתור כמד\"ר פשוטה."
+  },
+  {
+   "name": "סיווג ומעבר לצורה קנונית באמצעות החלפת משתנים נתונה",
+   "description": "קביעת סוג המשוואה (היפרבולית, פרבולית, אליפטית) לפי הדיסקרימיננטה, שימוש בכלל השרשרת עם החלפת משתנים נתונה כדי להגיע לצורה קנונית, ולעיתים מציאת הפתרון הכללי על ידי אינטגרציה."
+  },
+  {
+   "name": "משוואת הגלים בקו האינסופי/חצי ישר והתפשטות סינגולריות",
+   "description": "שימוש בנוסחת ד'אלמבר (לעיתים לאחר הרחבה זוגית/אי-זוגית לחצי ישר או ניחוש פתרון פרטי לאי-הומוגניות), וניתוח באילו תחומים הפתרון רציף או גזיר פעמיים/שלוש (פתרון אמיתי) על ידי מעקב אחר אי-רציפויות בנתוני ההתחלה לאורך קווים אופייניים."
+  },
+  {
+   "name": "משוואת הגלים עם תנאים על קווים משופעים / אופיינים",
+   "description": "מציאת פתרון למשוואת הגלים כאשר אחד או שני התנאים אינם על ציר ה-x אלא על ישרים מהצורה t=ax."
+  },
+  {
+   "name": "משוואת הגלים או החום בקטע חסום: הפרדת משתנים, רציפות ויחידות",
+   "description": "פתרון בעיית התחלה-שפה (לעיתים אי-הומוגנית הדורשת פונקציית תיקון) באמצעות פיתוח לטור פונקציות עצמיות של שטורם-ליוביל. בסעיפי ההמשך נדרש להוכיח רציפות הפתרון (מבחן ה-M של ויירשטראס) ו/או יחידות הפתרון (שיטת אינטגרל האנרגיה)."
+  },
+  {
+   "name": "משוואת לפלס בעיגול/טבעת/תחום חיצוני ובעיית נוימן",
+   "description": "פתרון משוואת לפלס בתחום מעגלי. כולל מציאת פרמטר לקיום תנאי הכרחי לבעיית נוימן, מעבר לקואורדינטות קוטביות והשוואת מקדמי פורייה (תוך שימוש בזהויות טריגונומטריות), חזרה לקואורדינטות קרטזיות, ושימוש בעקרון המקסימום או הממוצע."
+  },
+  {
+   "name": "משוואת לפלס במלבן ויחידות באמצעות זהות גרין",
+   "description": "פתרון משוואת לפלס במלבן או בחצי רצועה על ידי הפרדת משתנים (פונקציות היפרבוליות וטריגונומטריות), מציאת מינימום/מקסימום על השפה, והוכחת יחידות הפתרון (גם עבור תנאי שפה מעורבים/רובין) באמצעות זהות גרין הראשונה."
+  }
+ ],
+ "sheet": [
+  {
+   "title": "בעיית קושי למשוואה מסדר ראשון ותנאי החיתוך",
+   "items": [
+    {
+     "label": "צורה כללית של מד\"ח קוואזי-לינארית מסדר ראשון",
+     "latex": "a(x,y,u)u_x + b(x,y,u)u_y = c(x,y,u)"
+    },
+    {
+     "label": "פרמטריזציה של עקום ההתחלה",
+     "latex": "t=0: \\quad x(s,0)=x_0(s), \\quad y(s,0)=y_0(s), \\quad u(s,0)=u_0(s)"
+    },
+    {
+     "label": "תנאי החיתוך (טרנסוורסליות) לקיום ויחידות מקומית",
+     "latex": "J(s) = \\begin{vmatrix} x_t(s,0) & y_t(s,0) \\\\ x_s(s,0) & y_s(s,0) \\end{vmatrix} = \\begin{vmatrix} a(x_0(s),y_0(s),u_0(s)) & b(x_0(s),y_0(s),u_0(s)) \\\\ x_0'(s) & y_0'(s) \\end{vmatrix} \\neq 0"
+    },
+    {
+     "label": "תנאי לאינסוף פתרונות (עקום ההתחלה הוא עקום אופייני)",
+     "latex": "\\text{rank}\\begin{pmatrix} x_0'(s) & y_0'(s) & u_0'(s) \\\\ a(x_0,y_0,u_0) & b(x_0,y_0,u_0) & c(x_0,y_0,u_0) \\end{pmatrix} = 1"
+    },
+    {
+     "label": "תנאי לחוסר פתרון (סתירה לאורך העקום)",
+     "latex": "J(s) = 0 \\quad \\text{and} \\quad \\text{rank}\\begin{pmatrix} x_0'(s) & y_0'(s) & u_0'(s) \\\\ a(x_0,y_0,u_0) & b(x_0,y_0,u_0) & c(x_0,y_0,u_0) \\end{pmatrix} = 2"
+    },
+    {
+     "label": "מערכת משוואות האופייניים (בצורה פרמטרית)",
+     "latex": "\\frac{dx}{dt} = a(x,y,u), \\quad \\frac{dy}{dt} = b(x,y,u), \\quad \\frac{du}{dt} = c(x,y,u)"
+    }
+   ]
+  },
+  {
+   "title": "משוואת הגלים או החום בקטע חסום: הפרדת משתנים, רציפות ויחידות",
+   "items": [
+    {
+     "label": "מעבר לבעיה עם תנאי שפה הומוגניים",
+     "latex": "v(x,t) = u(x,t) - w(x,t)"
+    },
+    {
+     "label": "בעיית שטורם-ליוביל מרחבית בסיסית",
+     "latex": "X''(x) + \\lambda X(x) = 0, \\quad x \\in (0,L)"
+    },
+    {
+     "label": "שטורם-ליוביל: תנאי דיריכלה-דיריכלה",
+     "latex": "X(0)=0, \\; X(L)=0 \\implies \\lambda_n = \\left(\\frac{n\\pi}{L}\\right)^2, \\quad X_n(x) = \\sin\\left(\\frac{n\\pi x}{L}\\right) \\quad (n \\ge 1)"
+    },
+    {
+     "label": "שטורם-ליוביל: תנאי נוימן-נוימן",
+     "latex": "X'(0)=0, \\; X'(L)=0 \\implies \\lambda_0=0, X_0(x)=1; \\quad \\lambda_n = \\left(\\frac{n\\pi}{L}\\right)^2, X_n(x) = \\cos\\left(\\frac{n\\pi x}{L}\\right) \\; (n \\ge 1)"
+    },
+    {
+     "label": "שטורם-ליוביל: תנאי דיריכלה-נוימן (מעורב)",
+     "latex": "X(0)=0, \\; X'(L)=0 \\implies \\lambda_n = \\left(\\frac{(2n-1)\\pi}{2L}\\right)^2, \\quad X_n(x) = \\sin\\left(\\frac{(2n-1)\\pi x}{2L}\\right) \\quad (n \\ge 1)"
+    },
+    {
+     "label": "שטורם-ליוביל: תנאי נוימן-דיריכלה (מעורב)",
+     "latex": "X'(0)=0, \\; X(L)=0 \\implies \\lambda_n = \\left(\\frac{(2n-1)\\pi}{2L}\\right)^2, \\quad X_n(x) = \\cos\\left(\\frac{(2n-1)\\pi x}{2L}\\right) \\quad (n \\ge 1)"
+    }
+   ]
+  },
+  {
+   "title": "משוואת לפלס בעיגול/טבעת/תחום חיצוני ובעיית נוימן",
+   "items": [
+    {
+     "label": "תנאי התאימות ההכרחי לבעיית נוימן",
+     "latex": "\\oint_{\\partial \\Omega} \\frac{\\partial u}{\\partial \\hat{n}} ds = \\iint_{\\Omega} \\Delta u \\, dxdy"
+    },
+    {
+     "label": "כיוון הנגזרת הנורמלית החיצונית בקואורדינטות קוטביות",
+     "latex": "\\text{Outer boundary } (r=R): \\; \\frac{\\partial u}{\\partial \\hat{n}} = \\frac{\\partial v}{\\partial r}(R,\\theta), \\qquad \\text{Inner boundary } (r=R): \\; \\frac{\\partial u}{\\partial \\hat{n}} = -\\frac{\\partial v}{\\partial r}(R,\\theta)"
+    },
+    {
+     "label": "פתרון חסום למשוואת לפלס בתוך עיגול ($r < R$)",
+     "latex": "v(r,\\theta) = \\frac{A_0}{2} + \\sum_{n=1}^{\\infty} r^n \\left( A_n \\cos(n\\theta) + B_n \\sin(n\\theta) \\right)"
+    },
+    {
+     "label": "פתרון חסום למשוואת לפלס מחוץ לעיגול ($r > R$)",
+     "latex": "v(r,\\theta) = \\frac{A_0}{2} + \\sum_{n=1}^{\\infty} r^{-n} \\left( A_n \\cos(n\\theta) + B_n \\sin(n\\theta) \\right)"
+    },
+    {
+     "label": "פתרון כללי למשוואת לפלס בטבעת ($R_1 < r < R_2$) או ללא חסימות",
+     "latex": "v(r,\\theta) = C_0 + D_0 \\ln r + \\sum_{n=1}^{\\infty} \\left( (A_n r^n + B_n r^{-n})\\cos(n\\theta) + (C_n r^n + D_n r^{-n})\\sin(n\\theta) \\right)"
+    },
+    {
+     "label": "זהויות טריגונומטריות להורדת חזקות בתנאי השפה",
+     "latex": "\\cos^2\\theta = \\frac{1+\\cos(2\\theta)}{2}, \\quad \\sin^2\\theta = \\frac{1-\\cos(2\\theta)}{2}, \\quad \\sin\\theta\\cos\\theta = \\frac{\\sin(2\\theta)}{2}"
+    }
+   ]
+  },
+  {
+   "title": "סיווג ומעבר לצורה קנונית באמצעות החלפת משתנים נתונה",
+   "items": [
+    {
+     "label": "צורה כללית של מד\"ח לינארית מסדר שני בשני משתנים",
+     "latex": "a(x,y)u_{xx} + 2b(x,y)u_{xy} + c(x,y)u_{yy} + d(x,y)u_x + e(x,y)u_y + f(x,y)u = g(x,y)"
+    },
+    {
+     "label": "דיסקרימיננטה וכללי סיווג של מד\"ח מסדר שני",
+     "latex": "\\delta(x,y) = b^2 - ac \\; : \\quad \\begin{cases} \\delta > 0 & \\text{Hyperbolic (היפרבולית)} \\\\ \\delta = 0 & \\text{Parabolic (פרבולית)} \\\\ \\delta < 0 & \\text{Elliptic (אליפטית)} \\end{cases}"
+    },
+    {
+     "label": "כלל השרשרת לנגזרות מסדר ראשון ($u(x,y) = v(q(x,y), r(x,y))$)",
+     "latex": "u_x = v_q q_x + v_r r_x, \\qquad u_y = v_q q_y + v_r r_y"
+    },
+    {
+     "label": "כלל השרשרת לנגזרת שנייה לפי $x$",
+     "latex": "u_{xx} = v_{qq} q_x^2 + 2v_{qr} q_x r_x + v_{rr} r_x^2 + v_q q_{xx} + v_r r_{xx}"
+    },
+    {
+     "label": "כלל השרשרת לנגזרת שנייה לפי $y$",
+     "latex": "u_{yy} = v_{qq} q_y^2 + 2v_{qr} q_y r_y + v_{rr} r_y^2 + v_q q_{yy} + v_r r_{yy}"
+    },
+    {
+     "label": "כלל השרשרת לנגזרת שנייה מעורבת",
+     "latex": "u_{xy} = v_{qq} q_x q_y + v_{qr}(q_x r_y + q_y r_x) + v_{rr} r_x r_y + v_q q_{xy} + v_r r_{xy}"
+    }
+   ]
+  },
+  {
+   "title": "משוואת הגלים בקו האינסופי/חצי ישר והתפשטות סינגולריות",
+   "items": [
+    {
+     "label": "נוסחת ד'אלמבר למשוואת הגלים בקו האינסופי ($u_{tt} - c^2 u_{xx} = F$)",
+     "latex": "u(x,t) = \\frac{f(x+ct)+f(x-ct)}{2} + \\frac{1}{2c}\\int_{x-ct}^{x+ct} g(s)ds + \\frac{1}{2c}\\int_0^t \\int_{x-c(t-\\tau)}^{x+c(t-\\tau)} F(s,\\tau)ds\\,d\\tau"
+    },
+    {
+     "label": "הרחבה אי-זוגית לחצי הישר (עבור תנאי דיריכלה $u(0,t)=0$)",
+     "latex": "f_{\\text{odd}}(x) = \\begin{cases} f(x) & x > 0 \\\\ 0 & x = 0 \\\\ -f(-x) & x < 0 \\end{cases}"
+    },
+    {
+     "label": "פתרון בחצי הישר $x>0$ עם תנאי דיריכלה $u(0,t)=0$ (שיטת השיקוף)",
+     "latex": "u(x,t) = \\begin{cases} \\frac{f(x+ct)+f(x-ct)}{2} + \\frac{1}{2c}\\int_{x-ct}^{x+ct} g(s)ds & x > ct \\\\[6pt] \\frac{f(x+ct)-f(ct-x)}{2} + \\frac{1}{2c}\\int_{ct-x}^{x+ct} g(s)ds & 0 < x < ct \\end{cases}"
+    },
+    {
+     "label": "הרחבה זוגית לחצי הישר (עבור תנאי נוימן $u_x(0,t)=0$)",
+     "latex": "f_{\\text{even}}(x) = \\begin{cases} f(x) & x \\ge 0 \\\\ f(-x) & x < 0 \\end{cases}"
+    },
+    {
+     "label": "פתרון בחצי הישר $x>0$ עם תנאי נוימן $u_x(0,t)=0$ (שיטת השיקוף)",
+     "latex": "u(x,t) = \\begin{cases} \\frac{f(x+ct)+f(x-ct)}{2} + \\frac{1}{2c}\\int_{x-ct}^{x+ct} g(s)ds & x > ct \\\\[6pt] \\frac{f(x+ct)+f(ct-x)}{2} + \\frac{1}{2c}\\left(\\int_0^{x+ct} g(s)ds + \\int_0^{ct-x} g(s)ds\\right) & 0 < x < ct \\end{cases}"
+    },
+    {
+     "label": "תנאי חלקות לקיום פתרון קלאסי (אמיתי) מדרגה $C^k$",
+     "latex": "f \\in C^k(\\mathbb{R}), \\quad g \\in C^{k-1}(\\mathbb{R}), \\quad F \\in C^{k-1}(\\mathbb{R}\\times[0,\\infty)) \\implies u \\in C^k"
+    }
+   ]
+  },
+  {
+   "title": "משוואת לפלס במלבן ויחידות באמצעות זהות גרין",
+   "items": [
+    {
+     "label": "הפרדת משתנים למשוואת לפלס במלבן ($u_{xx} + u_{yy} = 0$)",
+     "latex": "u(x,y) = X(x)Y(y) \\implies \\frac{X''(x)}{X(x)} = -\\frac{Y''(y)}{Y(y)} = \\lambda"
+    },
+    {
+     "label": "פתרון המד\"ר בכיוון השני (עבור $\\lambda_n = \\mu_n^2 > 0$)",
+     "latex": "X''(x) - \\mu_n^2 X(x) = 0 \\implies X_n(x) = A_n \\cosh(\\mu_n x) + B_n \\sinh(\\mu_n x)"
+    },
+    {
+     "label": "פתרון המד\"ר בכיוון השני עבור ערך עצמי אפס ($\\lambda_0 = 0$)",
+     "latex": "X''(x) = 0 \\implies X_0(x) = A_0 + B_0 x"
+    },
+    {
+     "label": "פתרון במלבן $[0,a]\\times[0,b]$ עם $u(x,0)=u(x,b)=0$",
+     "latex": "u(x,y) = \\sum_{n=1}^{\\infty} \\left[ A_n \\sinh\\left(\\frac{n\\pi x}{b}\\right) + B_n \\sinh\\left(\\frac{n\\pi(a-x)}{b}\\right) \\right] \\sin\\left(\\frac{n\\pi y}{b}\\right)"
+    },
+    {
+     "label": "פתרון חסום בחצי רצועה אינסופית ($x > 0, \\; 0 < y < b$)",
+     "latex": "u(x,y) = \\sum_{n=1}^{\\infty} A_n e^{-\\frac{n\\pi x}{b}} \\sin\\left(\\frac{n\\pi y}{b}\\right)"
+    },
+    {
+     "label": "עקרון המקסימום והמינימום החלש לפונקציות הרמוניות",
+     "latex": "\\Delta u = 0 \\text{ in } \\Omega \\implies \\max_{\\overline{\\Omega}} u = \\max_{\\partial \\Omega} u, \\qquad \\min_{\\overline{\\Omega}} u = \\min_{\\partial \\Omega} u"
+    }
+   ]
+  }
+ ],
+ "site": {
+  "brand": "מד״ח מ׳",
+  "accent": "#a94d31",
+  "lang": "he"
+ },
+ "backend": {
+  "url": "https://jknxhihqrwfmnkbqvsbw.supabase.co",
+  "key": "sb_publishable_zGwb0JTIOJ9ZSACRXap-7A_hnpLSCHO"
+ }
+}

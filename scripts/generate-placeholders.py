@@ -36,7 +36,7 @@ HEAD='''<!doctype html>
   <nav class="container nav" aria-label="ניווט ראשי">
     <a class="brand" href="/">'''+BRAND+'''</a>
     <div class="nav-links">
-      <a href="/#chapters">הפרקים</a><a href="/tricks.html">שיטות</a>
+      <a href="/#chapters">הפרקים</a><a href="/tricks.html">שיטות</a><a href="/tutor/">תרגול עם מורה AI</a>
     </div>
     <div class="nav-tools">
       <button type="button" class="icon-button" data-theme-toggle>מצב כהה</button>

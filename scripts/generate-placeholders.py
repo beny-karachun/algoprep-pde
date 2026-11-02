@@ -89,7 +89,16 @@ HERO=r"""  <section class="hero" aria-labelledby="hero-title">
         </div>
         <p class="hero-free rise" style="--d:5">התחברות עם Google · ניסיון חינם במורה ה-AI</p>
       </div>
-      <aside class="countdown-card rise" style="--d:3" id="exam"><div data-countdown="home" aria-label="ספירה לבחינה הבאה"></div></aside>
+      <div class="hero-video rise" style="--d:3">
+        <div class="video" data-yt="VIDEO">
+          <a class="video-link" href="https://www.youtube.com/watch?v=VIDEO" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/VIDEO/maxresdefault.jpg" alt="" width="1280" height="720">
+            <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+            <span class="sr-only">צפייה בסרטון: כל סוגי השאלות ב־32 דקות</span>
+          </a>
+        </div>
+        <p class="hero-video-cap">סרטון · כל סוגי השאלות ב־32 דקות</p>
+      </div>
     </div>
   </section>
 
@@ -180,20 +189,14 @@ TOPICS
     </div>
   </section>
 
-  <section class="section video-section" aria-labelledby="video-title">
-    <div class="container video-grid">
+  <section class="section countdown-section" aria-labelledby="countdown-title">
+    <div class="container countdown-grid">
       <div class="section-intro" data-reveal>
-        <p class="eyebrow">סרטון</p>
-        <h2 id="video-title">כל סוגי השאלות ב־32 דקות.</h2>
-        <p class="muted">בעיית קושי, הפרדת משתנים, לפלס וגלים: מעבר על כל סוג שאלה שמופיע במבחן, ואיך פותרים אותו.</p>
+        <p class="eyebrow">הבחינה</p>
+        <h2 id="countdown-title">כמה זמן נשאר לתרגל.</h2>
+        <p class="muted">הספירה למועד הבחינה הבא. כמה סבבים קצרים עם המורה בכל יום עד אז, וכל נוסחה בדף נמצאת בשניות.</p>
       </div>
-      <div class="video" data-reveal data-yt="VIDEO">
-        <a class="video-link" href="https://www.youtube.com/watch?v=VIDEO" target="_blank" rel="noopener">
-          <img src="https://i.ytimg.com/vi/VIDEO/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
-          <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
-          <span class="sr-only">צפייה בסרטון: כל סוגי השאלות ב־32 דקות</span>
-        </a>
-      </div>
+      <aside class="countdown-card" data-reveal id="exam"><div data-countdown="home" aria-label="ספירה לבחינה הבאה"></div></aside>
     </div>
   </section>
 

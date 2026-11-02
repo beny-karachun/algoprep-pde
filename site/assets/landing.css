@@ -277,7 +277,9 @@ html:not(.motion-ready) .book-cover { display: none; }
 .motion-ready .topic-bars .topic-bar i { transform: scaleX(0); transition: transform .9s var(--ease-out); transition-delay: calc(var(--i) * 70ms + 200ms); }
 .motion-ready .topic-bars.in .topic-bar i { transform: none; }
 
-.video-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.countdown-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.hero-video { min-width: 0; }
+.hero-video-cap { margin: .8rem 0 0; font-size: .9rem; color: var(--muted); text-align: center; }
 .video { position: relative; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: var(--ink); box-shadow: var(--shadow); }
 .video-link, .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease-out), filter .3s; }
@@ -290,8 +292,8 @@ html:not(.motion-ready) .book-cover { display: none; }
 .start-cta { margin-top: 0; }
 
 /* The art sits beside these text blocks too (see Option A above). */
-.how-grid > [data-reveal]:first-child, .tools .section-intro, .exam-topics .section-intro, .video-section .section-intro, .sheet-section .section-intro { position: relative; }
-.how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before, .sheet-section .section-intro::before { content: ''; position: absolute; z-index: -1; inset: -3.5rem -4rem; pointer-events: none;
+.how-grid > [data-reveal]:first-child, .tools .section-intro, .exam-topics .section-intro, .countdown-section .section-intro, .sheet-section .section-intro { position: relative; }
+.how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .countdown-section .section-intro::before, .sheet-section .section-intro::before { content: ''; position: absolute; z-index: -1; inset: -3.5rem -4rem; pointer-events: none;
   background: radial-gradient(closest-side, var(--paper) 55%, color-mix(in srgb, var(--paper) 0%, transparent)); }
 
 /* The formula sheet: its 5 pages, scrolled inside a frame. */
@@ -306,13 +308,13 @@ html:not(.motion-ready) .book-cover { display: none; }
 @media (max-width: 700px) { .sheet-pages { height: 70vh; padding: .6rem; gap: .6rem; } }
 
 @media (max-width: 1000px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 900px) { .how-grid, .topics-grid, .video-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .how-grid, .topics-grid, .countdown-grid { grid-template-columns: 1fr; } }
 @media (max-width: 700px) {
   .tool-grid, .demo-sheet { grid-template-columns: 1fr; }
   .app-facts .facts { padding-inline: .5rem; }
   .topic-bars { padding: 1rem 1.1rem; }
   .video-play { width: 3.8rem; height: 3.8rem; margin: -1.9rem 0 0 -1.9rem; }
-  .how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before, .sheet-section .section-intro::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
+  .how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .countdown-section .section-intro::before, .sheet-section .section-intro::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
 }
 @media (prefers-reduced-motion: reduce) {
   .motion-ready .demo .lasso path { stroke-dashoffset: 0; transition: none; }

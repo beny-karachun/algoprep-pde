@@ -413,10 +413,10 @@
       if (!isFinite(L)) L = innerWidth * 0.5;
       R.noGuard = true;
       const rc = sel => { const el = document.querySelector(sel); return el ? el.getBoundingClientRect() : null; };
-      const card = rc('.hero .countdown-card'); const intro = rc('.course .section-intro'); const grow = rc('.trick-grid .grow');
+      const card = rc('.hero .video'); const intro = rc('.course .section-intro'); const grow = rc('.trick-grid .grow');
       const lw = L - 60; // usable width left of the text
       R.slot = {
-        // membrane: the drumhead spreads behind the countdown card, its edges showing around it
+        // membrane: the drumhead spreads behind the hero video, its edges showing around it
         hero: card ? { cx: card.left + card.width / 2, cy: card.top + card.height / 2 + 10, F: card.width * 2.2 } : null,
         // heat: the rod runs into the depth across the empty left half, level with the heading
         heat: intro ? { cx: lw * 0.5, cy: intro.top + intro.height * 0.45, F: Math.min(lw * 1.8, innerHeight * 1.5), X: 4.6 } : null,

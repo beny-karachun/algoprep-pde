@@ -143,6 +143,30 @@ STATS
     </div>
   </section>
 
+  <section class="section sheet-section" id="sheet" aria-labelledby="sheet-title">
+    <div class="container sheet-grid">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">דף הנוסחאות</p>
+        <h2 id="sheet-title">5 עמודים, לפי סוגי השאלות.</h2>
+        <p class="muted">כל סוג שאלה שמופיע במבחן: מילות המפתח שמזהות אותו, שלבי הפתרון והנוסחאות שצריך.</p>
+        <div class="actions">
+          <a class="button" href="/formula-sheet.pdf" target="_blank" rel="noopener">פתיחת ה-PDF</a>
+          <a class="button secondary" href="/tutor/">תרגול על הדף</a>
+        </div>
+      </div>
+      <figure class="sheet-frame" data-reveal>
+        <figcaption class="sheet-bar"><span>PDE · מד״ח מ׳ · 5 עמודים</span><a href="/formula-sheet.pdf" download="PDE · מד״ח מ׳ · דף נוסחאות.pdf">הורדה</a></figcaption>
+        <div class="sheet-pages" tabindex="0" aria-label="דף הנוסחאות, 5 עמודים">
+          <img src="/assets/sheet/page-1.webp" alt="דף הנוסחאות, עמוד 1 מתוך 5" width="1800" height="2548">
+          <img src="/assets/sheet/page-2.webp" alt="דף הנוסחאות, עמוד 2 מתוך 5" width="1800" height="2548" loading="lazy">
+          <img src="/assets/sheet/page-3.webp" alt="דף הנוסחאות, עמוד 3 מתוך 5" width="1800" height="2548" loading="lazy">
+          <img src="/assets/sheet/page-4.webp" alt="דף הנוסחאות, עמוד 4 מתוך 5" width="1800" height="2548" loading="lazy">
+          <img src="/assets/sheet/page-5.webp" alt="דף הנוסחאות, עמוד 5 מתוך 5" width="1800" height="2548" loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </section>
+
   <section class="section exam-topics" aria-labelledby="topics-title">
     <div class="container topics-grid">
       <div class="section-intro" data-reveal>

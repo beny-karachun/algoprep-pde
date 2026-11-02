@@ -290,9 +290,20 @@ html:not(.motion-ready) .book-cover { display: none; }
 .start-cta { margin-top: 0; }
 
 /* The art sits beside these text blocks too (see Option A above). */
-.how-grid > [data-reveal]:first-child, .tools .section-intro, .exam-topics .section-intro, .video-section .section-intro { position: relative; }
-.how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before { content: ''; position: absolute; z-index: -1; inset: -3.5rem -4rem; pointer-events: none;
+.how-grid > [data-reveal]:first-child, .tools .section-intro, .exam-topics .section-intro, .video-section .section-intro, .sheet-section .section-intro { position: relative; }
+.how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before, .sheet-section .section-intro::before { content: ''; position: absolute; z-index: -1; inset: -3.5rem -4rem; pointer-events: none;
   background: radial-gradient(closest-side, var(--paper) 55%, color-mix(in srgb, var(--paper) 0%, transparent)); }
+
+/* The formula sheet: its 5 pages, scrolled inside a frame. */
+.sheet-grid { display: grid; gap: clamp(1.6rem, 4vw, 2.6rem); }
+.sheet-frame { margin: 0; border: 1px solid var(--line); border-radius: 20px; background: var(--paper-deep); box-shadow: var(--shadow); overflow: hidden; }
+.sheet-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .7rem 1.1rem; border-bottom: 1px solid var(--line); background: var(--card); font-size: .9rem; color: var(--muted); }
+.sheet-bar a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.sheet-bar a:hover { text-decoration: underline; }
+.sheet-pages { display: grid; gap: 1rem; padding: 1rem; height: min(80vh, 56rem); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.sheet-pages:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+.sheet-pages img { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
+@media (max-width: 700px) { .sheet-pages { height: 70vh; padding: .6rem; gap: .6rem; } }
 
 @media (max-width: 1000px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 900px) { .how-grid, .topics-grid, .video-grid { grid-template-columns: 1fr; } }
@@ -301,7 +312,7 @@ html:not(.motion-ready) .book-cover { display: none; }
   .app-facts .facts { padding-inline: .5rem; }
   .topic-bars { padding: 1rem 1.1rem; }
   .video-play { width: 3.8rem; height: 3.8rem; margin: -1.9rem 0 0 -1.9rem; }
-  .how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
+  .how-grid > [data-reveal]:first-child::before, .tools .section-intro::before, .exam-topics .section-intro::before, .video-section .section-intro::before, .sheet-section .section-intro::before { inset: -2rem -1.5rem; background: radial-gradient(closest-side, color-mix(in srgb, var(--paper) 85%, transparent) 60%, color-mix(in srgb, var(--paper) 0%, transparent)); }
 }
 @media (prefers-reduced-motion: reduce) {
   .motion-ready .demo .lasso path { stroke-dashoffset: 0; transition: none; }

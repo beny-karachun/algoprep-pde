@@ -1,0 +1,51 @@
+name: Deploy course to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update asset versions
+        run: node scripts/version-assets.mjs
+      - name: Check site links and practice banks
+        run: node scripts/check-site.mjs
+      - name: Check chapter filenames
+        run: |
+          node <<'JS'
+          const fs = require('node:fs');
+          const vm = require('node:vm');
+          const context = { window: {} };
+          vm.runInNewContext(fs.readFileSync('site/assets/config.js', 'utf8'), context);
+          const config = context.window.TP_CONFIG;
+          for (const chapter of config.chapters) {
+            const folder = `site/chapters/${chapter.slug}`;
+            const files = fs.readdirSync(folder);
+            if (files.some(file => !/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(file) || file.includes('..') || !fs.lstatSync(`${folder}/${file}`).isFile())) {
+              throw new Error(`Invalid chapter filename: ${chapter.slug}`);
+            }
+          }
+          JS
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

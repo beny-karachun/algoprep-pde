@@ -1,0 +1,5 @@
+# Keep chapter content private by default. Only the public chapter overview pages are tracked.
+# Paid material must never be committed here; it is served from content.technionprep.com.
+# To publish a free chapter, add an explicit !site/chapters/<slug>/*.html rule after checking config.js.
+site/chapters/*/*
+!site/chapters/*/index.html

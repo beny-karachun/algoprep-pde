@@ -279,6 +279,9 @@ html:not(.motion-ready) .book-cover { display: none; }
 
 .countdown-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
 .hero-video { min-width: 0; }
+/* Open space above the video where the drumhead plays (ascii.js centres it here), so the video never covers it. */
+.hero-art { height: clamp(11rem, 28vh, 16rem); }
+@media (max-width: 700px) { .hero-art { display: none; } }
 .hero-video-cap { margin: .8rem 0 0; font-size: .9rem; color: var(--muted); text-align: center; }
 .video { position: relative; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: var(--ink); box-shadow: var(--shadow); }
 .video-link, .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }

@@ -90,6 +90,7 @@ HERO=r"""  <section class="hero" aria-labelledby="hero-title">
         <p class="hero-free rise" style="--d:5">התחברות עם Google · ניסיון חינם במורה ה-AI</p>
       </div>
       <div class="hero-video rise" style="--d:3">
+        <div class="hero-art" aria-hidden="true"></div>
         <div class="video" data-yt="VIDEO">
           <a class="video-link" href="https://www.youtube.com/watch?v=VIDEO" target="_blank" rel="noopener">
             <img src="https://i.ytimg.com/vi/VIDEO/maxresdefault.jpg" alt="" width="1280" height="720">
